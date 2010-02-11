@@ -1,26 +1,8 @@
-class Die
-  attr_accessor :face
-  @letters
-
-  def initialize(letters)
-    @letters = letters
-    @face = rand(6)
-  end
-
-  def getLetter
-    @letters[face]
-  end
-
-  def shake
-    @face = rand(6)
-  end
-end
-
 class Board
-  
+
   def initialize
     @board = Array.new(4) { Array.new(4) }
-    
+
     load_defaults()
   end
 
@@ -43,6 +25,3 @@ class Board
     end
   end
 end
-
-#b = Board.new
-#b.show_board
